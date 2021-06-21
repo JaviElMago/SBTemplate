@@ -22,5 +22,11 @@ public class StudentController {
 	public List<Student> test() {
 		return sService.getAllStudents();
 	}
+	
+	@GetMapping
+	@RequestMapping(path = "studbyname")
+	public Student getStudByName() {
+		return new Student();
+	}
 
 }
